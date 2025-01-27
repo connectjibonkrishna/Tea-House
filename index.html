@@ -12,8 +12,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- Fontawesone cdn -->
     <script src="https://kit.fontawesome.com/ca41441c73.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend:{
+                    fontFamily: {
+                        manrope: ['Manrope', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     </head>
-<body>
-
+<body class="font-manrope">
+    <main class="max-w-screen-2xl mx-auto my-16">
+        <!-- Banner section -->
+        <section class="lg:flex justify-between items-center">
+             <div>
+                <h1 class="text-5xl md:text-7xl font-extrabold">It's good <br>tea time at The <br>Tea House</h1>
+                <p>
+                    Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                </p>
+                <button>Explore More</button>
+             </div>
+             <div>
+                <img src="images/banner.png" alt="">
+             </div>
+        </section>
+    </main>
 </body>
 </html>
